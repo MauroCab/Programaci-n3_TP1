@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Heladería</title>
+    <link rel="icon" href="icon.png">
+    
+</head>
+<body>
+    <div id="diveditar">
+        <input type="button" id="editbutton" onclick="activarModoTachar()" value="Editar Disponibilidad"> <span class="titulo">Heladería</span>
+    </div>
+
+    <div id="divtabla">
+        <table id="tabla">
+            <colgroup>
+                <col class="crema">
+                <col class="fruta">
+                <col class="choco">
+                <col class="ddl">
+                <col class="gourmet">
+            </colgroup>
+            <tr> 
+                <th>A LA CREMA</th>
+                <th>FRUTALES</th>
+                <th>CHOCOLATE</th> 
+                <th>DULCE DE LECHE</th> 
+                <th>GOURMET</th> 
+            </tr>
+            <tr> 
+                <td><span class="contenido">Almendrado</span><input type="checkbox" class="checkbox" onchange="toggleTachado(this)"></td>
+                <td><span class="contenido">Durazno</span><input type="checkbox" class="checkbox" onchange="toggleTachado(this)"></td>
+                <td><span class="contenido">Chocolate</span><input type="checkbox" class="checkbox" onchange="toggleTachado(this)"></td>
+                <td><span class="contenido">Dulce de leche</span><input type="checkbox" class="checkbox" onchange="toggleTachado(this)"></td>
+                <td><span class="contenido">Arándanos</span><input type="checkbox" class="checkbox" onchange="toggleTachado(this)"></td>
+              </tr>
+              <tr>
+                <td><span class="contenido">Banana c/ d. de leche</span><input type="checkbox" class="checkbox" onchange="toggleTachado(this)"></td>
+                <td><span class="contenido">Frutilla</span><input type="checkbox" class="checkbox" onchange="toggleTachado(this)"></td>
+                <td><span class="contenido">Chocolate Blanco</span><input type="checkbox" class="checkbox" onchange="toggleTachado(this)"></td>
+                <td><span class="contenido">Dulce de leche con nuez</span><input type="checkbox" class="checkbox" onchange="toggleTachado(this)"></td>
+                <td><span class="contenido">Crema cookies</span><input type="checkbox" class="checkbox" onchange="toggleTachado(this)"></td>
+              </tr>
+              <tr>
+                <td><span class="contenido">Bananita dolce</span><input type="checkbox" class="checkbox" onchange="toggleTachado(this)"></td>
+                <td><span class="contenido">Limón</span><input type="checkbox" class="checkbox" onchange="toggleTachado(this)"></td>
+                <td><span class="contenido">Chocolate c/ almendras</span><input type="checkbox" class="checkbox" onchange="toggleTachado(this)"></td>
+                <td><span class="contenido">Dulce de leche granizado</span><input type="checkbox" class="checkbox" onchange="toggleTachado(this)"></td>
+                <td><span class="contenido">Mascarpone</span><input type="checkbox" class="checkbox" onchange="toggleTachado(this)"></td>
+              </tr>
+              <tr>
+                <td><span class="contenido">Cerezas a la crema</span><input type="checkbox" class="checkbox" onchange="toggleTachado(this)"></td>
+                <td><span class="contenido">Limón c/ menta y jengibre</span><input type="checkbox" class="checkbox" onchange="toggleTachado(this)"></td>
+                <td><span class="contenido">Chocolate Rocher</span><input type="checkbox" class="checkbox" onchange="toggleTachado(this)"></td>
+                <td><span class="contenido">Super dulce de leche</span><input type="checkbox" class="checkbox" onchange="toggleTachado(this)"></td>
+                <td><span class="contenido">Tiramisú</span><input type="checkbox" class="checkbox" onchange="toggleTachado(this)"></td>
+              </tr>
+              <tr>
+                <td><span class="contenido">Chantilly</span><input type="checkbox" class="checkbox" onchange="toggleTachado(this)"></td>
+                <td><span class="contenido">Maracuyá</span><input type="checkbox" class="checkbox" onchange="toggleTachado(this)"></td>
+                <td></td>
+                <td></td>
+                <td><span class="contenido">Tramontana</span><input type="checkbox" class="checkbox" onchange="toggleTachado(this)"></td>
+              </tr>
+              <tr>
+                <td><span class="contenido">Crema del cielo</span><input type="checkbox" class="checkbox" onchange="toggleTachado(this)"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><span class="contenido">Vainitella</span><input type="checkbox" class="checkbox" onchange="toggleTachado(this)"></td>
+              </tr>
+              <tr>
+                <td><span class="contenido">Crema rusa</span><input type="checkbox" class="checkbox" onchange="toggleTachado(this)"></td>
+              </tr>
+              <tr>
+                <td><span class="contenido">Flan c/ d. de leche</span><input type="checkbox" class="checkbox" onchange="toggleTachado(this)"></td>
+              </tr>
+              <tr>
+                <td><span class="contenido">Frutilla a la crema</span><input type="checkbox" class="checkbox" onchange="toggleTachado(this)"></td>
+              </tr>
+              <tr>
+                <td><span class="contenido">Frutilla nevada</span><input type="checkbox" class="checkbox" onchange="toggleTachado(this)"></td>
+              </tr>
+              <tr>
+                <td><span class="contenido">Granizado</span><input type="checkbox" class="checkbox" onchange="toggleTachado(this)"></td>
+              </tr>
+              <tr>
+                <td><span class="contenido">Mantecol</span><input type="checkbox" class="checkbox" onchange="toggleTachado(this)"></td>
+              </tr>
+              <tr>
+                <td><span class="contenido">Menta granizada</span><input type="checkbox" class="checkbox" onchange="toggleTachado(this)"></td>
+              </tr>
+              <tr>
+                <td><span class="contenido">Quinotos al whisky</span><input type="checkbox" class="checkbox" onchange="toggleTachado(this)"></td>
+              </tr>
+              <tr>
+                <td><span class="contenido">Sambayón</span><input type="checkbox" class="checkbox" onchange="toggleTachado(this)"></td>
+              </tr>
+              <tr>
+                <td><span class="contenido">Vainilla</span><input type="checkbox" class="checkbox" onchange="toggleTachado(this)"></td>
+            </tr>
+            
+        </table>
+    </div>
+    <div class="image">
+      <img src="icecream.png" class="image">
+    </div>
+
+    <script>
+
+      function activarModoTachar() {
+      const tabla = document.getElementById('tabla');
+      tabla.classList.toggle('mostrar-checkboxes');
+      }
+
+      function toggleTachado(checkbox) {
+      const span = checkbox.parentElement.querySelector('.contenido');
+          if (checkbox.checked) {
+              span.classList.add('tachado');
+              } else {
+              span.classList.remove('tachado');
+          }
+      }
+    </script>
+
+</body>
+</html>
